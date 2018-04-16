@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package fibonacci
 
 func Fib(n int) int {
 	switch n {
@@ -11,9 +9,4 @@ func Fib(n int) int {
 	default:
 		return Fib(n-1) + Fib(n-2)
 	}
-}
-
-func main() {
-	f := Fib(10)
-	fmt.Println(f)
 }
