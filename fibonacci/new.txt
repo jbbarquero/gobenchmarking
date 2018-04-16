@@ -1,0 +1,15 @@
+goos: darwin
+goarch: amd64
+pkg: github.com/jbbarquero/gobenchmarking/fibonacci
+BenchmarkFib-4   	   30000	     50592 ns/op
+BenchmarkFib-4   	   30000	     49650 ns/op
+BenchmarkFib-4   	   30000	     49211 ns/op
+BenchmarkFib-4   	   30000	     70363 ns/op
+BenchmarkFib-4   	   20000	     60736 ns/op
+BenchmarkFib-4   	   30000	     49027 ns/op
+BenchmarkFib-4   	   30000	     48593 ns/op
+BenchmarkFib-4   	   20000	     61582 ns/op
+BenchmarkFib-4   	   30000	     51564 ns/op
+BenchmarkFib-4   	   30000	     48186 ns/op
+PASS
+ok  	github.com/jbbarquero/gobenchmarking/fibonacci	21.503s
