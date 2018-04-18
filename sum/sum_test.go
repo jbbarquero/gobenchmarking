@@ -33,10 +33,12 @@ func TestIntsBis(t *testing.T) {
 	}
 
 	for _, tc := range tt {
-		s := Ints(tc.numbers...)
-		if s != tc.sum {
-			t.Errorf("Test %v failed. Sum of %v should be %v; got %v", tc.name, tc.numbers, tc.sum, s)
-		}
+		t.Run(tc.name, func(t *testing.T) {
+			s := Ints(tc.numbers...)
+			if s != tc.sum {
+				t.Fatalf("Test %v failed. Sum of %v should be %v; got %v", tc.name, tc.numbers, tc.sum, s)
+			}
+		})
 
 	}
 }
